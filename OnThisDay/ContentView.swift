@@ -10,6 +10,7 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @State private var eventType: EventType? = .events
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -18,7 +19,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            Text("Fake sidebar")
+            SidebarView(selection: $eventType)
             Text("Fake details")
         }
         .frame(minWidth: 700, idealWidth: 1000, maxWidth: .infinity, minHeight: 400, idealHeight: 800, maxHeight: .infinity)

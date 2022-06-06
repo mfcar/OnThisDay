@@ -76,7 +76,7 @@ struct Event: Decodable, Identifiable {
   }
 }
 
-enum EventType: String {
+enum EventType: String, CaseIterable {
   case events = "Events"
   case births = "Births"
   case deaths = "Deaths"

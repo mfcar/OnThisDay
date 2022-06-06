@@ -19,6 +19,7 @@
 		57B13000284DFA5B00D7BADC /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FF9284DFA5B00D7BADC /* Day.swift */; };
 		57B13001284DFA5B00D7BADC /* String_decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FFB284DFA5B00D7BADC /* String_decoded.swift */; };
 		57B13002284DFA5B00D7BADC /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FFC284DFA5B00D7BADC /* Networker.swift */; };
+		57B13004284DFC1A00D7BADC /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13003284DFC1A00D7BADC /* SidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		57B12FF9284DFA5B00D7BADC /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		57B12FFB284DFA5B00D7BADC /* String_decoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_decoded.swift; sourceTree = "<group>"; };
 		57B12FFC284DFA5B00D7BADC /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		57B13003284DFC1A00D7BADC /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				57B12FEF284DF8F700D7BADC /* OnThisDay.entitlements */,
 				57B12FEC284DF8F700D7BADC /* OnThisDay.xcdatamodeld */,
 				57B12FE7284DF8F700D7BADC /* Preview Content */,
+				57B13003284DFC1A00D7BADC /* SidebarView.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				57B12FE4284DF8F600D7BADC /* ContentView.swift in Sources */,
 				57B13002284DFA5B00D7BADC /* Networker.swift in Sources */,
 				57B12FFF284DFA5B00D7BADC /* EventLink.swift in Sources */,
+				57B13004284DFC1A00D7BADC /* SidebarView.swift in Sources */,
 				57B12FFE284DFA5B00D7BADC /* Event.swift in Sources */,
 				57B13001284DFA5B00D7BADC /* String_decoded.swift in Sources */,
 				57B12FE2284DF8F600D7BADC /* OnThisDayApp.swift in Sources */,
