@@ -10,19 +10,33 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var appState: AppState
     @State private var eventType: EventType? = .events
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    var events: [Event] {
+        appState.dataFor(eventType: eventType)
+    }
+    
+    var windowTitle: String {
+        if let eventType = eventType {
+            return "On This Day - \(eventType.rawValue)"
+        } else {
+            return "On This Day"
+        }
+    }
 
     var body: some View {
         NavigationView {
             SidebarView(selection: $eventType)
-            Text("Fake details")
+            GridView(gridData: events)
         }
         .frame(minWidth: 700, idealWidth: 1000, maxWidth: .infinity, minHeight: 400, idealHeight: 800, maxHeight: .infinity)
+        .navigationTitle(windowTitle)
     }
 
     private func addItem() {
