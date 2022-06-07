@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5732AAD7284FEE710021A57D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAD6284FEE710021A57D /* GridView.swift */; };
+		5732AAD9284FF3C50021A57D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAD8284FF3C50021A57D /* Menu.swift */; };
 		57B12FE2284DF8F600D7BADC /* OnThisDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */; };
 		57B12FE4284DF8F600D7BADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE3284DF8F600D7BADC /* ContentView.swift */; };
 		57B12FE6284DF8F700D7BADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B12FE5284DF8F700D7BADC /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		5732AAD6284FEE710021A57D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		5732AAD8284FF3C50021A57D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		57B12FDE284DF8F600D7BADC /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		57B12FE3284DF8F600D7BADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				57B12FEF284DF8F700D7BADC /* OnThisDay.entitlements */,
 				57B12FEC284DF8F700D7BADC /* OnThisDay.xcdatamodeld */,
 				57B12FE7284DF8F700D7BADC /* Preview Content */,
+				5732AAD8284FF3C50021A57D /* Menu.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				57B13002284DFA5B00D7BADC /* Networker.swift in Sources */,
 				57B12FFF284DFA5B00D7BADC /* EventLink.swift in Sources */,
 				57B13004284DFC1A00D7BADC /* SidebarView.swift in Sources */,
+				5732AAD9284FF3C50021A57D /* Menu.swift in Sources */,
 				57B12FFE284DFA5B00D7BADC /* Event.swift in Sources */,
 				5732AAD7284FEE710021A57D /* GridView.swift in Sources */,
 				57B13009284DFEB200D7BADC /* SampleEvent.swift in Sources */,

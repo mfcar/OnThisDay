@@ -18,5 +18,8 @@ struct OnThisDayApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(appState)
         }
+        .commands {
+            Menus()
+        }
     }
 }
