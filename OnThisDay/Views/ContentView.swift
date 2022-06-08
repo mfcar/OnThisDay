@@ -12,6 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var appState: AppState
     @State private var eventType: EventType? = .events
+    @State private var searchText = ""
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -19,7 +20,7 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     var events: [Event] {
-        appState.dataFor(eventType: eventType)
+        appState.dataFor(eventType: eventType, searchText: searchText)
     }
     
     var windowTitle: String {
@@ -37,6 +38,10 @@ struct ContentView: View {
         }
         .frame(minWidth: 700, idealWidth: 1000, maxWidth: .infinity, minHeight: 400, idealHeight: 800, maxHeight: .infinity)
         .navigationTitle(windowTitle)
+        .toolbar(id: "mainToolbar") {
+            Toolbar()
+        }
+        .searchable(text: $searchText)
     }
 
     private func addItem() {
