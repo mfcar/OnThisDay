@@ -11,6 +11,8 @@
 		5732AAD9284FF3C50021A57D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAD8284FF3C50021A57D /* Menu.swift */; };
 		5732AADB28514E9F0021A57D /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AADA28514E9F0021A57D /* DisplayMode.swift */; };
 		5732AADE2851521F0021A57D /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AADD2851521F0021A57D /* Toolbar.swift */; };
+		5732AAE0285291360021A57D /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AADF285291360021A57D /* TableView.swift */; };
+		5732AAE2285298940021A57D /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAE1285298940021A57D /* DayPicker.swift */; };
 		57B12FE2284DF8F600D7BADC /* OnThisDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */; };
 		57B12FE4284DF8F600D7BADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE3284DF8F600D7BADC /* ContentView.swift */; };
 		57B12FE6284DF8F700D7BADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B12FE5284DF8F700D7BADC /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		5732AAD8284FF3C50021A57D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		5732AADA28514E9F0021A57D /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		5732AADD2851521F0021A57D /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		5732AADF285291360021A57D /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		5732AAE1285298940021A57D /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		57B12FDE284DF8F600D7BADC /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		57B12FE3284DF8F600D7BADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				57B13003284DFC1A00D7BADC /* SidebarView.swift */,
 				57B13005284DFE2B00D7BADC /* EventView.swift */,
 				5732AAD6284FEE710021A57D /* GridView.swift */,
+				5732AADF285291360021A57D /* TableView.swift */,
+				5732AAE1285298940021A57D /* DayPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				57B13000284DFA5B00D7BADC /* Day.swift in Sources */,
 				57B13006284DFE2B00D7BADC /* EventView.swift in Sources */,
 				57B12FEE284DF8F700D7BADC /* OnThisDay.xcdatamodeld in Sources */,
+				5732AAE2285298940021A57D /* DayPicker.swift in Sources */,
 				57B12FE4284DF8F600D7BADC /* ContentView.swift in Sources */,
 				57B13002284DFA5B00D7BADC /* Networker.swift in Sources */,
 				5732AADB28514E9F0021A57D /* DisplayMode.swift in Sources */,
@@ -229,6 +236,7 @@
 				5732AADE2851521F0021A57D /* Toolbar.swift in Sources */,
 				5732AAD9284FF3C50021A57D /* Menu.swift in Sources */,
 				57B12FFE284DFA5B00D7BADC /* Event.swift in Sources */,
+				5732AAE0285291360021A57D /* TableView.swift in Sources */,
 				5732AAD7284FEE710021A57D /* GridView.swift in Sources */,
 				57B13009284DFEB200D7BADC /* SampleEvent.swift in Sources */,
 				57B13001284DFA5B00D7BADC /* String_decoded.swift in Sources */,

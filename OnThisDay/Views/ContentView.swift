@@ -8,11 +8,18 @@
 import SwiftUI
 import CoreData
 
+enum ViewMode: Int {
+    case grid
+    case table
+}
+
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var appState: AppState
-    @State private var eventType: EventType? = .events
-    @State private var searchText = ""
+    @SceneStorage("eventType") var eventType: EventType?
+    @SceneStorage("searchText") var searchText = ""
+    @SceneStorage("viewMode") var viewMode: ViewMode = .grid
+    @SceneStorage("selectedDate") var selectedDate: String?
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -20,7 +27,10 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     var events: [Event] {
-        appState.dataFor(eventType: eventType, searchText: searchText)
+        appState.dataFor(
+            eventType: eventType,
+            date: selectedDate,
+            searchText: searchText)
     }
     
     var windowTitle: String {
@@ -34,14 +44,24 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             SidebarView(selection: $eventType)
-            GridView(gridData: events)
+            
+            if viewMode == .table {
+                TableView(tableData: events)
+            } else {
+                GridView(gridData: events)
+            }
         }
         .frame(minWidth: 700, idealWidth: 1000, maxWidth: .infinity, minHeight: 400, idealHeight: 800, maxHeight: .infinity)
         .navigationTitle(windowTitle)
         .toolbar(id: "mainToolbar") {
-            Toolbar()
+            Toolbar(viewMode: $viewMode)
         }
         .searchable(text: $searchText)
+        .onAppear {
+            if eventType == nil {
+                eventType = .events
+            }
+        }
     }
 
     private func addItem() {
