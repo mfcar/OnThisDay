@@ -28,5 +28,8 @@ struct OnThisDayApp: App {
         .commands {
             Menus()
         }
+        Settings {
+            PreferencesView()
+        }
     }
 }
