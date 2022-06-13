@@ -14,6 +14,7 @@
 		5732AAE0285291360021A57D /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AADF285291360021A57D /* TableView.swift */; };
 		5732AAE2285298940021A57D /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAE1285298940021A57D /* DayPicker.swift */; };
 		5732AAE4285400EC0021A57D /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732AAE3285400EC0021A57D /* PreferencesView.swift */; };
+		5732AAE62857D7130021A57D /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5732AAE52857D7130021A57D /* Credits.html */; };
 		57B12FE2284DF8F600D7BADC /* OnThisDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */; };
 		57B12FE4284DF8F600D7BADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B12FE3284DF8F600D7BADC /* ContentView.swift */; };
 		57B12FE6284DF8F700D7BADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B12FE5284DF8F700D7BADC /* Assets.xcassets */; };
@@ -39,7 +40,8 @@
 		5732AADF285291360021A57D /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		5732AAE1285298940021A57D /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		5732AAE3285400EC0021A57D /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		57B12FDE284DF8F600D7BADC /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5732AAE52857D7130021A57D /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		57B12FDE284DF8F600D7BADC /* On This Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On This Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B12FE1284DF8F600D7BADC /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		57B12FE3284DF8F600D7BADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57B12FE5284DF8F700D7BADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		57B12FDF284DF8F600D7BADC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57B12FDE284DF8F600D7BADC /* OnThisDay.app */,
+				57B12FDE284DF8F600D7BADC /* On This Day.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 				57B12FEC284DF8F700D7BADC /* OnThisDay.xcdatamodeld */,
 				57B12FE7284DF8F700D7BADC /* Preview Content */,
 				5732AADC2851520B0021A57D /* Controls */,
+				5732AAE52857D7130021A57D /* Credits.html */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -158,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57B12FDD284DF8F600D7BADC /* OnThisDay */ = {
+		57B12FDD284DF8F600D7BADC /* On This Day */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57B12FF2284DF8F700D7BADC /* Build configuration list for PBXNativeTarget "OnThisDay" */;
+			buildConfigurationList = 57B12FF2284DF8F700D7BADC /* Build configuration list for PBXNativeTarget "On This Day" */;
 			buildPhases = (
 				57B12FDA284DF8F600D7BADC /* Sources */,
 				57B12FDB284DF8F600D7BADC /* Frameworks */,
@@ -170,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = OnThisDay;
+			name = "On This Day";
 			productName = OnThisDay;
-			productReference = 57B12FDE284DF8F600D7BADC /* OnThisDay.app */;
+			productReference = 57B12FDE284DF8F600D7BADC /* On This Day.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57B12FDD284DF8F600D7BADC /* OnThisDay */,
+				57B12FDD284DF8F600D7BADC /* On This Day */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B12FE9284DF8F700D7BADC /* Preview Assets.xcassets in Resources */,
+				5732AAE62857D7130021A57D /* Credits.html in Resources */,
 				57B12FE6284DF8F700D7BADC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57B12FF2284DF8F700D7BADC /* Build configuration list for PBXNativeTarget "OnThisDay" */ = {
+		57B12FF2284DF8F700D7BADC /* Build configuration list for PBXNativeTarget "On This Day" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57B12FF3284DF8F700D7BADC /* Debug */,

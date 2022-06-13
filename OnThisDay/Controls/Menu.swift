@@ -15,7 +15,7 @@ struct Menus: Commands {
         SidebarCommands()
         ToolbarCommands()
         
-        CommandGroup(before: .help) {
+        CommandGroup(replacing: .help) {
             Button("ZenQuotes.io web site") {
                 showAPIWebSite()
             }

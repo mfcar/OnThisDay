@@ -10,6 +10,8 @@ import SwiftUI
 struct SidebarView: View {
     @Binding var selection: EventType?
     @EnvironmentObject var appState: AppState
+    @AppStorage("showBirths") var showBirths = true
+    @AppStorage("showDeaths") var showDeaths = true
     @AppStorage("showTotals") var showTotals = true
     @SceneStorage("selectedDate") var selectedDate: String?
     
@@ -17,7 +19,7 @@ struct SidebarView: View {
         VStack {
             List(selection: $selection) {
                 Section(selectedDate?.uppercased() ?? "TODAY") {
-                    ForEach(EventType.allCases, id: \.self) {
+                    ForEach(validTypes, id: \.self) {
                         type in
                         Text(type.rawValue)
                             .badge(
@@ -46,6 +48,18 @@ struct SidebarView: View {
             .listStyle(.sidebar)
         }
         .frame(minWidth: 220)
+    }
+    
+    var validTypes: [EventType] {
+        var types = [EventType.events]
+        if showBirths {
+            types.append(.births)
+        }
+        if showDeaths {
+            types.append(.deaths)
+        }
+        
+        return types
     }
 }
 
